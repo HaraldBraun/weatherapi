@@ -44,7 +44,7 @@ count=20
 
 Beispiel für „Nordheim“ nur in Deutschland:
 '''Plain Text
-https://geocoding-api.open-meteo.com/v1/search?name=Nordheim&countryCode=DE&language=de&count=20Weitere Zeilen anzeigen
+https://geocoding-api.open-meteo.com/v1/search?name=Nordheim&countryCode=DE&language=de&count=20  
 '''
 
 Die API liefert mehrere Treffer (Nordheim am Main, Nordheim in BW, Hessen, Thüringen usw.), jeweils mit Koordinaten.
@@ -61,7 +61,7 @@ GetSuggestions("Nord", "DE")
 
 Geocoding‑Actor ruft API auf:
 '''Plain Text
-https://geocoding-api.open-meteo.com/v1/search?name=Nord&countryCode=DE&count=10&language=deWeitere Zeilen anzeigen
+https://geocoding-api.open-meteo.com/v1/search?name=Nord&countryCode=DE&count=10&language=de  
 '''
 
 API liefert Liste von möglichen Orten
@@ -77,7 +77,7 @@ Open‑Meteo Forecast API nutzt ausschließlich Koordinaten.
 Beispiel für Nordheim am Main:
 
 '''Plain Text
-https://api.open-meteo.com/v1/forecast?latitude=49.8587&longitude=10.18545&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,wind_speed_10m,relative_humidity_2mWeitere Zeilen anzeigen
+https://api.open-meteo.com/v1/forecast?latitude=49.8587&longitude=10.18545&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,wind_speed_10m,relative_humidity_2m  
 '''
 Du erhältst:
 

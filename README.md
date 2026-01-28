@@ -35,7 +35,7 @@ Das Repository ist nach Best-Practices für LabVIEW-Projekte organisiert:
 
 1. **Repository klonen:**
    ```bash
-   git clone [https://github.com/HaraldBraun/weatherapi.git](https://github.com/HaraldBraun/weatherapi.git)
+   git clone https://github.com/HaraldBraun/weatherapi.git
    ```
 
 2. **Abhängigkeiten prüfen:** Stelle sicher, dass die JKI JSON Bibliothek über den VIPM installiert ist.

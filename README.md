@@ -19,7 +19,7 @@ Um dieses Projekt auszuführen oder weiterzuentwickeln, werden folgende Komponen
 
 1. **LabVIEW:** Empfohlen Version 2020 oder neuer.
 2. **JKI JSON Library:** Diese Bibliothek wird zwingend für das Parsen der Wetterdaten benötigt.
-   - Die Installation erfolgt am einfachsten über den [JKI VI Package Manager (VIPM)](https://www.vipm.io/package/jki_lib_json/).
+   - Die Installation erfolgt am einfachsten über den [JKI VI Package Manager (VIPM)](https://www.vipm.io/package/jki_lib_json_serialization/)).
 3. **Actor Framework:** Ist standardmäßig in LabVIEW enthalten.
 
 ## Projektstruktur

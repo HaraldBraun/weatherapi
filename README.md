@@ -4,6 +4,11 @@ Dieses Repository enthält eine Implementierung der [Weather API Challenge](http
 
 Die Besonderheit dieses Projekts liegt in der Verwendung von **NI LabVIEW** und dem **Actor Framework**, um eine skalierbare, objektorientierte und modulare Architektur abzubilden.
 
+## Demo-Video
+
+Klick auf das Vorschaubild, um die Anwendung in Aktion zu sehen:
+[![WeatherUI Preview](./Ressources/WeatherForecastScreenshot.png)](./Ressources/WeatherUI_Project.mp4)
+
 ## Architektur & Features
 
 Das Projekt basiert auf dem **Actor Model**, was eine saubere Trennung von Verantwortlichkeiten (Separation of Concerns) ermöglicht:

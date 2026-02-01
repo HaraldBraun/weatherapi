@@ -1,66 +1,64 @@
 # Weather API - LabVIEW Actor Framework
 
-Dieses Repository enthält eine Implementierung der [Weather API Challenge](https://roadmap.sh/projects/weather-api-wrapper-service) von roadmap.sh. Das Ziel ist es, einen Wrapper-Service für Wetterdaten bereitzustellen, der Anfragen entgegennimmt, externe Wetter-APIs konsumiert und die Ergebnisse effizient verarbeitet.
+This repository contains an implementation of the [Weather API Challenge](https://roadmap.sh/projects/weather-api-wrapper-service) from roadmap.sh. The goal is to provide a wrapper service for weather data that receives requests, consumes external weather APIs, and processes the results efficiently.
 
-Die Besonderheit dieses Projekts liegt in der Verwendung von **NI LabVIEW** und dem **Actor Framework**, um eine skalierbare, objektorientierte und modulare Architektur abzubilden.
+The unique highlight of this project is the use of **NI LabVIEW** and the **Actor Framework** to create a scalable, object-oriented, and modular architecture.
 
 ## Demo-Video
 
 Klick auf das Vorschaubild, um die Anwendung in Aktion zu sehen:
 [![WeatherUI Preview](./Ressources/WeatherForecastScreenshot.png)](./Ressources/WeatherUI_Project.mp4)
 
-## Architektur & Features
+## Architecture & Features
 
-Das Projekt basiert auf dem **Actor Model**, was eine saubere Trennung von Verantwortlichkeiten (Separation of Concerns) ermöglicht:
+The project is based on the **Actor Model**, which enables a clean separation of concerns:
 
-- **Modularität:** Jeder Dienst (z. B. der Wetter-Client) läuft als eigenständiger Actor.
-- **Fehlertoleranz:** Nutzung der integrierten Error-Handling-Mechanismen des Actor Frameworks zur Überwachung der Prozesse.
-- **REST-Integration:** Anbindung an externe Wetter-Provider über HTTP-Requests.
-- **JSON-Parsing:** Schnelle und zuverlässige Datenverarbeitung der API-Antworten.
+- **Modularity:** Each service (e.g., the Weather Client) runs as an independent Actor.
+- **Fault Tolerance:** Utilizes the built-in error-handling mechanisms of the Actor Framework to monitor processes.
+- **REST Integration:** Connection to external weather providers via HTTP requests.
+- **JSON Parsing:** Fast and reliable data processing of API responses.
 
-## Voraussetzungen
+## Prerequisites
 
-Um dieses Projekt auszuführen oder weiterzuentwickeln, werden folgende Komponenten benötigt:
+To run or further develop this project, the following components are required:
 
-1. **LabVIEW:** Empfohlen Version 2020 oder neuer.
-2. **JKI JSON Library:** Diese Bibliothek wird zwingend für das Parsen der Wetterdaten benötigt.
-   - Die Installation erfolgt am einfachsten über den [JKI VI Package Manager (VIPM)](https://www.vipm.io/package/jki_lib_json_serialization/)).
-3. **Actor Framework:** Ist standardmäßig in LabVIEW enthalten.
+1. **LabVIEW:** Version 2020 or newer is recommended.
+2. **JKI JSON Library:** This library is mandatory for parsing weather data.
+   * The easiest way to install it is via the [JKI VI Package Manager (VIPM)](https://www.vipm.io/package/jki_lib_json_serialization/)).
+3. **Actor Framework:** Included by default in LabVIEW.
 
-## Projektstruktur
+## Project Structure
 
-Das Repository ist nach Best-Practices für LabVIEW-Projekte organisiert:
+The repository is organized according to best practices for LabVIEW projects:
 
-- `Weather API.lvproj`: Die Hauptprojektdatei für LabVIEW.
-- `Weather Actor.lvclass`: Enthält die Logik für den Abruf und die Verarbeitung der Wetterdaten.
-- `Messages`: Beinhaltet die spezifischen Actor-Messages zur Kommunikation zwischen den Komponenten.
-- `Documentation`: (Falls vorhanden) Enthält Diagramme zur Actor-Hierarchie.
+- `Weather API.lvproj`: The main LabVIEW project file.
+- `Weather Actor.lvclass`: Contains the logic for retrieving and processing weather data.
+- `Messages`: Contains specific Actor messages for communication between components.
+- `Documentation`: (If available) Contains diagrams of the Actor hierarchy.
 
-## Installation & Verwendung
+## Installation & Usage
 
-1. **Repository klonen:**
-   ```bash
+1. **Clone the repository:**
+
+   ```Bash
    git clone https://github.com/HaraldBraun/weatherapi.git
    ```
+2. **Check dependencies:** Ensure the JKI JSON library is installed via VIPM.
+3. **Open the project:** Launch the Weather API.lvproj file in LabVIEW.
+4. **Start the Splash Screen VI:** Locate the main entry point in the Project Explorer (usually Main.vi or the Root Actor) and run it.
 
-2. **Abhängigkeiten prüfen:** Stelle sicher, dass die JKI JSON Bibliothek über den VIPM installiert ist.
+## Configuration
 
-3. **Projekt öffnen:** Start die Datei Weather API.lvproj in LabVIEW.
-
-4. **Splash Screen VI starten:** Suche im Projekt-Explorer nach dem Main-Entry-Point (meist Main.vi oder der Root-Actor) und starte die Ausführung.
-
-## Konfiguration
-Das Programm benötigt einen gültigen API-Schlüssel eines Wetter-Dienstanbieters (z. B. Visual Crossing oder OpenWeatherMap). Dieser kann in den Initialisierungsparametern des Weather-Actors hinterlegt werden.
+The program requires a valid API key from a weather service provider (e.g., Visual Crossing or OpenWeatherMap). This key can be stored in the initialization parameters of the Weather Actor.  
 
 ## Roadmap.sh Challenge
-Dieses Projekt deckt folgende Anforderungen der Challenge ab:
 
-- [x] Abrufen von Wetterdaten über eine externe API.
+This project covers the following requirements of the challenge:
 
-- [x] Caching-Logik für API-Antworten (optional/in Arbeit).
-
-- [x] Konsolen- oder GUI-basierte Ausgabe der Ergebnisse.
+- [x] Fetching weather data via an external API.
+- [x] Caching logic for API responses (optional/in progress).
+- [x] Console- or GUI-based output of results.
 
 ---
 
-Entwickelt von [Harald Braun](https://github.com/HaraldBraun).
+Developed by [Harald Braun - LinkedIn](https://www.linkedin.com/in/harald-ludwig-braun).
